@@ -1,4 +1,7 @@
-#Tue Jul 24 11:55:55 ICT 2018
-base.0=D\:\\project\\primaberita\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Jul 24 22:24:44 ICT 2018
+base.0=D\:\\project\\PrimaBerita\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=D\:\\project\\PrimaBerita\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12

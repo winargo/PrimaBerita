@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/PrimaBerita.iml" filepath="$PROJECT_DIR$/PrimaBerita.iml" />
       <module fileurl="file://$PROJECT_DIR$/YouTubeAndroidPlayer/YouTubeAndroidPlayer.iml" filepath="$PROJECT_DIR$/YouTubeAndroidPlayer/YouTubeAndroidPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/primaberita.iml" filepath="$PROJECT_DIR$/.idea/primaberita.iml" />
     </modules>
   </component>
 </project>

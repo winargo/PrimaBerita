@@ -1,86 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\project\\primaberita\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\project\\PrimaBerita\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "D:\\project\\primaberita\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "19",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "287"
-                    },
-                    "to": {
-                        "startLines": "289",
-                        "startColumns": "4",
-                        "startOffsets": "21015",
-                        "endLines": "293",
-                        "endColumns": "12",
-                        "endOffsets": "21279"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Riandy\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\c8bceb5d69144fdce9c61075b46d6545\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,266",
-                        "endLines": "4,5",
-                        "endColumns": "12,96",
-                        "endOffsets": "261,358"
-                    },
-                    "to": {
-                        "startLines": "164,228",
-                        "startColumns": "4,4",
-                        "startOffsets": "12577,17127",
-                        "endLines": "166,228",
-                        "endColumns": "12,96",
-                        "endOffsets": "12783,17219"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Riandy\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\3c8c6cf57c59691c031584409b9ae8cf\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
-                        "endLines": "2,3,4,5,6,7,8,9,12,17",
-                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,310,311,318,322,326,329",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,22470,22586,23043,23337,23632,23804",
-                        "endLines": "2,3,4,5,310,311,318,322,328,333",
-                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,22581,22707,23164,23460,23799,24137"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Riandy\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\43cbdab95a3dd9bb48048bf2085b2b04\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "312,315,319,323",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "22712,22880,23169,23465",
-                        "endLines": "314,317,321,325",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "22875,23038,23332,23627"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Riandy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31b59b5222f2b42a5f01a6731ff19933\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\rwina\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\abb0a2f9101aa653c1abf2a6ae5fede4\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247,259,260,261,264,267,268,271,272",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -99,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Riandy\\.gradle\\caches\\transforms-1\\files-1.1\\core-0.9.4.7.aar\\a199a2ae4b341f028c025d623f878a55\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\rwina\\.gradle\\caches\\transforms-1\\files-1.1\\core-0.9.4.7.aar\\c33ecd63500ec2030716258eedc85bf5\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,13",
                         "startColumns": "4,4",
@@ -115,6 +39,82 @@
                         "endLines": "239,250",
                         "endColumns": "10,10",
                         "endOffsets": "17944,18661"
+                    }
+                },
+                {
+                    "source": "D:\\project\\PrimaBerita\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "287"
+                    },
+                    "to": {
+                        "startLines": "289",
+                        "startColumns": "4",
+                        "startOffsets": "21015",
+                        "endLines": "293",
+                        "endColumns": "12",
+                        "endOffsets": "21279"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rwina\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\59a08ab233a7e5083d9e45f2d3b93bfb\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,266",
+                        "endLines": "4,5",
+                        "endColumns": "12,96",
+                        "endOffsets": "261,358"
+                    },
+                    "to": {
+                        "startLines": "164,228",
+                        "startColumns": "4,4",
+                        "startOffsets": "12577,17127",
+                        "endLines": "166,228",
+                        "endColumns": "12,96",
+                        "endOffsets": "12783,17219"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rwina\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\42a917ccf5c5c4bf6d8bf77a3b7898be\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "312,315,319,323",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "22712,22880,23169,23465",
+                        "endLines": "314,317,321,325",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "22875,23038,23332,23627"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rwina\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\f61f35308bcdc2e23fc3f4252c921ccd\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
+                        "endLines": "2,3,4,5,6,7,8,9,12,17",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,310,311,318,322,326,329",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,22470,22586,23043,23337,23632,23804",
+                        "endLines": "2,3,4,5,310,311,318,322,328,333",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,22581,22707,23164,23460,23799,24137"
                     }
                 }
             ]
