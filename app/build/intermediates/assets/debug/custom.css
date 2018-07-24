@@ -1,0 +1,43 @@
+
+/*   —-   Override Registration Webview   —-   */
+
+#login h1,#nav , #backtoblog {
+    display:none !important;
+}
+
+body .register{
+    color:transparent;
+}
+.login form {
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.login form .input, .login form input[type=checkbox], .login input[type=text] {
+    background: transparent;
+}
+.wp-core-ui .button-primary {
+    background: #ee4481;
+    border-color: #ee4481;
+    -webkit-box-shadow: 0 1px 0 #ee4481;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #ee4481, 1px 0 1px #ee4481, 0 1px 1px #ee4481, -1px 0 1px #ee4481;
+}
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+    background: #ee4481;
+    border-color: #ee4481;
+    color: #fff;
+}
+.login #login_error, .login .message {
+    border-left: transparent;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    font-size: 14px;
+}

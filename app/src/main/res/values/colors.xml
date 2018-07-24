@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff424242</color>
+    <color name="colorPrimaryDark">#ff212121</color>
+    <color name="colorAccent">#00ccff</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="light_text">#FBFBFB</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_30_percent">#4Dffffff</color>
+    <color name="dark_overlay">#66000000</color>
+    <color name="login_bg_overlay">#aa424242</color>
+</resources>

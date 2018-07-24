@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yayandroid:ParallaxRecyclerView-1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ParallaxRecyclerView-1.1.aar/a893028a66bac14a5a81b2b4221b0002/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ParallaxRecyclerView-1.1.aar/a893028a66bac14a5a81b2b4221b0002/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yayandroid/ParallaxRecyclerView/1.1/fc454dc27ce0d957636821e61c6a4cb957472e37/ParallaxRecyclerView-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

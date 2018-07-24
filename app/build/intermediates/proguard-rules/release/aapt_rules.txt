@@ -1,0 +1,316 @@
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_comments.xml:2
+-keep class android.support.constraint.ConstraintLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout\design_bottom_navigation_item.xml:26
+-keep class android.support.design.internal.BaselineLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout\design_navigation_item.xml:17
+-keep class android.support.design.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout\design_navigation_menu.xml:17
+-keep class android.support.design.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout\design_layout_snackbar_include.xml:18
+-keep class android.support.design.internal.SnackbarContentLayout { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_category_posts.xml:8
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_comments.xml:8
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_full_image_view_slider.xml:16
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:11
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:11
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_detail.xml:9
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_videos.xml:9
+# Referenced at D:\project\primaberita\app\src\main\res\layout\app_bar_main.xml:11
+-keep class android.support.design.widget.AppBarLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout\design_text_input_password_icon.xml:18
+-keep class android.support.design.widget.CheckableImageButton { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:18
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:18
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_detail.xml:16
+# Referenced at D:\project\primaberita\app\src\main\res\layout\app_bar_main.xml:17
+-keep class android.support.design.widget.CollapsingToolbarLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout\design_bottom_sheet_dialog.xml:26
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:2
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:2
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_detail.xml:2
+# Referenced at D:\project\primaberita\app\src\main\res\layout\app_bar_main.xml:4
+-keep class android.support.design.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:237
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:224
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_detail.xml:136
+-keep class android.support.design.widget.FloatingActionButton { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_main.xml:33
+-keep class android.support.design.widget.NavigationView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout-sw600dp-v13\design_layout_snackbar.xml:18
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout\design_layout_snackbar.xml:18
+-keep class android.support.design.widget.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\app_bar_main.xml:27
+# Referenced at D:\project\primaberita\app\src\main\res\layout\list_item_facebook.xml:12
+# Referenced at D:\project\primaberita\app\src\main\res\layout\list_item_instagram.xml:13
+-keep class android.support.percent.PercentFrameLayout { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_favorites_tab.xml:26
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_main.xml:2
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_material.xml:41
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:56
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:56
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_detail.xml:48
+-keep class android.support.v4.widget.NestedScrollView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_button_bar_material.xml:43
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_material.xml:52
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_material.xml:66
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_title_material.xml:56
+-keep class android.support.v4.widget.Space { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_webview.xml:2
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_select_dialog_material.xml:23
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_action_menu_item_layout.xml:17
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_expanded_menu_layout.xml:17
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_list_menu_item_layout.xml:17
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_popup_menu_item_layout.xml:17
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout-v26\abc_screen_toolbar.xml:27
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_toolbar.xml:27
+-keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout-v26\abc_screen_toolbar.xml:44
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_action_mode_bar.xml:19
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_toolbar.xml:43
+-keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout-v26\abc_screen_toolbar.xml:17
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_toolbar.xml:17
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_action_menu_layout.xml:17
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_activity_chooser_view.xml:19
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_material.xml:18
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_login.xml:94
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_login.xml:107
+-keep class android.support.v7.widget.AppCompatButton { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout-ldrtl-v17\md_listitem_multichoice.xml:29
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_listitem_multichoice.xml:17
+-keep class android.support.v7.widget.AppCompatCheckBox { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_login.xml:47
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_login.xml:60
+-keep class android.support.v7.widget.AppCompatEditText { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout-ldrtl-v17\md_listitem_singlechoice.xml:29
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_listitem_singlechoice.xml:17
+-keep class android.support.v7.widget.AppCompatRadioButton { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_button_bar_material.xml:26
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_content_include.xml:19
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_alert_dialog_title_material.xml:45
+-keep class android.support.v7.widget.DialogTitle { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_simple_overlay_action_mode.xml:23
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_dialog_title_material.xml:22
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_simple.xml:17
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_list.xml:39
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_list_check.xml:39
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_comments.xml:29
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:192
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:223
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:179
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:210
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_categories.xml:6
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_custom_category.xml:6
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_facebook.xml:6
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_instagram.xml:7
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_social_favorites.xml:7
+-keep class android.support.v7.widget.RecyclerView { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_search_view.xml:75
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout-v26\abc_screen_toolbar.xml:37
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_toolbar.xml:36
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_category_posts.xml:14
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_comments.xml:20
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_full_image_slider.xml:28
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_full_image_view_slider.xml:22
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_photo_detail.xml:52
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:43
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:43
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_search_posts.xml:11
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_webview.xml:11
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_detail.xml:36
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_videos.xml:15
+# Referenced at D:\project\primaberita\app\src\main\res\layout\app_bar_main.xml:42
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_simple.xml:25
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31b59b5222f2b42a5f01a6731ff19933\res\layout\abc_screen_simple_overlay_action_mode.xml:32
+-keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\app_bar_main.xml:31
+-keep class cn.bingoogolapple.bgabanner.BGABanner { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_stub_actionbuttons.xml:5
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_stub_actionbuttons.xml:10
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_stub_actionbuttons.xml:17
+-keep class com.afollestad.materialdialogs.internal.MDButton { <init>(...); }
+
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_basic.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_basic_check.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_custom.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_input.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_input_check.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_list.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_list_check.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_progress.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_progress_indeterminate.xml:1
+# Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\core-0.9.4.7.aar\a199a2ae4b341f028c025d623f878a55\res\layout\md_dialog_progress_indeterminate_horizontal.xml:1
+-keep class com.afollestad.materialdialogs.internal.MDRootLayout { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:26
+-keep class com.constantlab.wpconnect.application.ApplicationMain { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:72
+-keep class com.constantlab.wpconnect.firebase.MyFirebaseInstanceIDService { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:65
+-keep class com.constantlab.wpconnect.firebase.MyFirebaseMessagingService { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:88
+-keep class com.constantlab.wpconnect.views.activities.CategoryPostsActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:82
+-keep class com.constantlab.wpconnect.views.activities.CommentsActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:107
+-keep class com.constantlab.wpconnect.views.activities.FullImageSliderActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:50
+-keep class com.constantlab.wpconnect.views.activities.FullImageViewSliderActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:43
+-keep class com.constantlab.wpconnect.views.activities.LoginActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:35
+-keep class com.constantlab.wpconnect.views.activities.MainActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:103
+-keep class com.constantlab.wpconnect.views.activities.PhotoDetailActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:46
+-keep class com.constantlab.wpconnect.views.activities.PostDetailActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:85
+-keep class com.constantlab.wpconnect.views.activities.SearchPostsActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:53
+-keep class com.constantlab.wpconnect.views.activities.SplashScreenActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:79
+-keep class com.constantlab.wpconnect.views.activities.WebActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:94
+-keep class com.constantlab.wpconnect.views.activities.YoutubeDetailActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:91
+-keep class com.constantlab.wpconnect.views.activities.YoutubeVideosActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_full_image_slider.xml:15
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_full_image_view_slider.xml:11
+-keep class com.constantlab.wpconnect.views.custom.HackyViewPager { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:98
+-keep class com.constantlab.wpconnect.views.util.widgets.ytplayer.YouTubePlayerActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_splash_screen.xml:9
+-keep class com.flaviofaria.kenburnsview.KenBurnsView { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_photo_detail.xml:14
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_full_image.xml:8
+-keep class com.github.chrisbanes.photoview.PhotoView { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:179
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:132
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:146
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:127
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:142
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:152
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:166
+-keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:119
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:174
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_favorites_tab.xml:8
+-keep class com.ogaclejapan.smarttablayout.SmartTabLayout { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\item_progress_bar.xml:6
+# Referenced at D:\project\primaberita\app\src\main\res\layout\item_youtube_playlist.xml:11
+# Referenced at D:\project\primaberita\app\src\main\res\layout\item_youtube_video.xml:12
+# Referenced at D:\project\primaberita\app\src\main\res\layout\list_item_posts.xml:12
+-keep class com.yayandroid.parallaxrecyclerview.ParallaxImageView { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_search_posts.xml:57
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_videos.xml:24
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_favorites.xml:7
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_posts.xml:6
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_recent.xml:6
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_youtube_favorites.xml:7
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_youtube_playlists.xml:9
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_youtube_recents.xml:8
+# Referenced at D:\project\primaberita\app\src\main\res\layout\fragment_youtube_videos.xml:9
+-keep class com.yayandroid.parallaxrecyclerview.ParallaxRecyclerView { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\list_item_comments.xml:9
+# Referenced at D:\project\primaberita\app\src\main\res\layout\nav_header_main.xml:23
+-keep class de.hdodenhof.circleimageview.CircleImageView { <init>(...); }
+

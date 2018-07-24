@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/image_pfl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background">
+        <!--suppress AndroidDomInspection -->
+        <RelativeLayout
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="100%">
+
+            <ImageView
+                android:id="@+id/cover_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_gradient" />
+        </RelativeLayout>
+
+    </android.support.percent.PercentFrameLayout>
+
+    <ImageButton
+        android:id="@+id/playbutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fab_ripple_blue"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_play_arrow" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_pfl"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/caption_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:paddingBottom="16dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="16dp"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textAppearance="@style/TextAppearance.RobotoLight"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:text="@string/dummy_lorem" />
+
+
+        <ImageView
+            android:id="@+id/favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="16dp"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_favorite_filled" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomview"
+        android:layout_toStartOf="@id/playbutton"
+        android:paddingEnd="8dp"
+        android:paddingStart="16dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        tools:text="14/12/1988" />
+
+
+</RelativeLayout>

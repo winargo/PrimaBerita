@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:universal="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <item
+        android:id="@+id/download_item"
+        universal:showAsAction="always"
+        android:icon="@drawable/ic_file_download"
+        android:title="@string/save"/>
+         
+    <item
+        android:id="@+id/share_item"
+        universal:showAsAction="always"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share" />
+</menu>

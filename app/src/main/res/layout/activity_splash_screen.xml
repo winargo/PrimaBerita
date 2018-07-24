@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/ken_burns_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_media" />
+
+    <!-- We use dps for font size: we don't want our logo
+    to become larger if user has set larger text in global
+    settings. -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/logopetak" />
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/splash_screen_branding_bold"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.RobotoMedium"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_screen_branding_thin"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.RobotoLight"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+</RelativeLayout>

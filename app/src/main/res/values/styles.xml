@@ -1,0 +1,96 @@
+<resources>
+
+
+    <style name="SinglePostTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_text</item>
+        <item name="colorPrimaryDark">@color/primary_text</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="BannerDefaultStyle">
+        <item name="banner_pointAutoPlayAble">true</item>
+        <item name="banner_pointAutoPlayInterval">5000</item>
+        <item name="banner_pointContainerBackground">@android:color/transparent</item>
+        <item name="banner_pointDrawable">@drawable/indicator_selector</item>
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <item name="banner_pageChangeDuration">1400</item>
+        <item name="banner_tipTextSize">10sp</item>
+        <item name="banner_tipTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.RobotoThin" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Roboto-Thin.ttf</item>
+    </style>
+
+    <style name="TextAppearance.RobotoRegular" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+
+    <style name="TextAppearance.RobotoMedium" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="TextAppearance.RobotoBold" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="TextAppearance.RobotoCondensed" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Roboto-Condensed.ttf</item>
+    </style>
+
+    <style name="TextAppearance.RobotoLight" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+    </style>
+
+
+    <style name="CustomDayTextAppearance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomHeaderTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/dark_overlay</item>
+    </style>
+
+
+</resources>
