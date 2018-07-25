@@ -44,7 +44,7 @@
 # Referenced at D:\project\primaberita\app\src\main\res\layout\activity_youtube_detail.xml:136
 -keep class android.support.design.widget.FloatingActionButton { <init>(...); }
 
-# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_main.xml:33
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_main.xml:48
 -keep class android.support.design.widget.NavigationView { <init>(...); }
 
 # Referenced at C:\Users\Riandy\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\c8bceb5d69144fdce9c61075b46d6545\res\layout-sw600dp-v13\design_layout_snackbar.xml:18
@@ -167,7 +167,7 @@
 # Referenced at D:\project\primaberita\app\src\main\res\layout\activity_comments.xml:20
 # Referenced at D:\project\primaberita\app\src\main\res\layout\activity_full_image_slider.xml:28
 # Referenced at D:\project\primaberita\app\src\main\res\layout\activity_full_image_view_slider.xml:22
-# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_photo_detail.xml:52
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_photo_detail.xml:53
 # Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail.xml:43
 # Referenced at D:\project\primaberita\app\src\main\res\layout\activity_post_detail_webview.xml:43
 # Referenced at D:\project\primaberita\app\src\main\res\layout\activity_search_posts.xml:11
@@ -265,6 +265,9 @@
 
 # Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:179
 -keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# Referenced at D:\project\primaberita\app\src\main\res\layout\activity_main.xml:23
+-keep class com.google.android.gms.ads.AdView { <init>(...); }
 
 # Referenced at D:\project\primaberita\app\build\intermediates\manifests\full\release\AndroidManifest.xml:132
 -keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(...); }

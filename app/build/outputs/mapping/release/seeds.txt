@@ -9365,6 +9365,7 @@ com.constantlab.wpconnect.R$id: int action_text
 com.constantlab.wpconnect.R$id: int actions
 com.constantlab.wpconnect.R$id: int actions_ll
 com.constantlab.wpconnect.R$id: int activity_chooser_view_content
+com.constantlab.wpconnect.R$id: int adView
 com.constantlab.wpconnect.R$id: int ad_container_ll
 com.constantlab.wpconnect.R$id: int add
 com.constantlab.wpconnect.R$id: int alertTitle
@@ -11289,6 +11290,10 @@ com.google.android.gms.R$styleable: int AdsAttrs_adUnitId
 com.google.android.gms.ads.AdActivity
 com.google.android.gms.ads.AdActivity: AdActivity()
 com.google.android.gms.ads.AdActivity: void setContentView(android.view.View)
+com.google.android.gms.ads.AdView
+com.google.android.gms.ads.AdView: AdView(android.content.Context)
+com.google.android.gms.ads.AdView: AdView(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.ads.AdView: AdView(android.content.Context,android.util.AttributeSet,int)
 com.google.android.gms.ads.AdView: java.lang.String getMediationAdapterClassName()
 com.google.android.gms.ads.AdView: void setAdUnitId(java.lang.String)
 com.google.android.gms.ads.AdView: void setAdSize(com.google.android.gms.ads.AdSize)
@@ -11296,6 +11301,9 @@ com.google.android.gms.ads.AdView: void setAdListener(com.google.android.gms.ads
 com.google.android.gms.ads.AdView: java.lang.String getAdUnitId()
 com.google.android.gms.ads.AdView: com.google.android.gms.ads.AdSize getAdSize()
 com.google.android.gms.ads.AdView: com.google.android.gms.ads.AdListener getAdListener()
+com.google.android.gms.ads.BaseAdView: BaseAdView(android.content.Context,int)
+com.google.android.gms.ads.BaseAdView: BaseAdView(android.content.Context,android.util.AttributeSet,int)
+com.google.android.gms.ads.BaseAdView: BaseAdView(android.content.Context,android.util.AttributeSet,int,int)
 com.google.android.gms.ads.BaseAdView: com.google.android.gms.ads.AdListener getAdListener()
 com.google.android.gms.ads.BaseAdView: com.google.android.gms.ads.AdSize getAdSize()
 com.google.android.gms.ads.BaseAdView: java.lang.String getAdUnitId()

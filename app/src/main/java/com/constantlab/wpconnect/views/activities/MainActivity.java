@@ -88,6 +88,12 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         mPresenter = new MainPresenter(DataManager.getInstance(this));
         menuMaker = new MenuMaker(this, this);
+
+
+        AdView mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         initView();
         mPresenter.attachView(this);
         if (Config.ONLINE_NAVIGATION) {
@@ -412,8 +418,8 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
         setDrawerHeader();
         setSlider();
 
-        if (Config.ABMOB_APP_ID != null && Config.ADMOB_AD_UNIT_ID != null) {
-            if (!Config.ABMOB_APP_ID.isEmpty() && !Config.ADMOB_AD_UNIT_ID.isEmpty()) {
+        if (Config.ABMOB_APP_ID.equals("")  && Config.ADMOB_AD_UNIT_ID.equals("")) {
+            if (!Config.ABMOB_APP_ID.equals("") && !Config.ADMOB_AD_UNIT_ID.equals("")) {
                 adContainer.setVisibility(View.VISIBLE);
                 AdView adView = new AdView(MainActivity.this);
                 adView.setAdSize(AdSize.BANNER);
@@ -431,7 +437,7 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
             adContainer.setVisibility(View.GONE);
         }
 
-        menuItemClicked(menuMaker.getFirstNavItem(), menuMaker.getMenuItemList().get(0));
+        //menuItemClicked(menuMaker.getFirstNavItem(), menuMaker.getMenuItemList().get(0));
     }
 
     private void setSlider() {

@@ -37,6 +37,18 @@
           ]
         }
       ]
+    },{
+      "section_name": "Webview",
+      "items": [
+        {
+          "title": "Prima Berita",
+          "provider": "webview",
+          "icon": "ic_web",
+          "arguments": [
+            "https://www.primaberita.com/"
+          ]
+        }
+      ]
     },
     {
       "section_name": "Social",

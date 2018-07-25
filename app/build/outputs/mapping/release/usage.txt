@@ -6305,7 +6305,7 @@ com.constantlab.wpconnect.views.activities.FullImageViewSliderActivity$SamplePag
     300:321:public FullImageViewSliderActivity$SamplePagerAdapter(com.constantlab.wpconnect.views.activities.FullImageViewSliderActivity)
 com.constantlab.wpconnect.views.activities.MainActivity:
     public static final int UPLOAD_PHOTO_SUCCESS
-    105:107:private boolean isNetworkConnected()
+    111:113:private boolean isNetworkConnected()
 com.constantlab.wpconnect.views.activities.PhotoDetailActivity:
     private static final int UI_ANIMATION_DELAY
 com.constantlab.wpconnect.views.activities.PostDetailActivity:
@@ -6399,6 +6399,8 @@ com.constantlab.wpconnect.views.fragments.YouTubePlaylistFragment:
     private static final int TAB_LAYOUT_SPAN_SIZE
     private static final int TAB_LAYOUT_ITEM_SPAN_SIZE
 com.constantlab.wpconnect.views.menu.MenuExtras
+com.constantlab.wpconnect.views.menu.MenuMaker:
+    32:32:public com.constantlab.wpconnect.views.menu.NavItem getFirstNavItem()
 com.constantlab.wpconnect.views.menu.NavItem:
     25:25:public java.lang.String getProvider()
 com.constantlab.wpconnect.views.util.widgets.ytplayer.SystemUiHider
@@ -6572,12 +6574,8 @@ com.google.android.gms.ads.AdSize:
     public final boolean isAutoHeight()
     public final boolean isFullWidth()
 com.google.android.gms.ads.AdView:
-    public AdView(android.content.Context,android.util.AttributeSet)
-    public AdView(android.content.Context,android.util.AttributeSet,int)
     public final bridge synthetic boolean isLoading()
 com.google.android.gms.ads.BaseAdView:
-    public BaseAdView(android.content.Context,android.util.AttributeSet,int)
-    public BaseAdView(android.content.Context,android.util.AttributeSet,int,int)
     public boolean isLoading()
 com.google.android.gms.ads.Correlator:
     public Correlator()
@@ -7480,7 +7478,6 @@ com.google.android.gms.internal.zzmv:
 com.google.android.gms.internal.zzmw:
     public zzmw(android.view.ViewGroup)
     public zzmw(android.view.ViewGroup,android.util.AttributeSet,boolean)
-    public zzmw(android.view.ViewGroup,android.util.AttributeSet,boolean,int)
     public final void zzi()
     public final boolean zzl()
     public final boolean zza(com.google.android.gms.internal.zzlt)

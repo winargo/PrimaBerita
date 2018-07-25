@@ -21808,9 +21808,8 @@ com.constantlab.wpconnect.views.menu.MenuMaker -> com.constantlab.wpconnect.view
     android.content.Context context -> c
     com.constantlab.wpconnect.views.menu.NavItem firstNavItem -> d
     void <init>(android.content.Context,com.constantlab.wpconnect.views.menu.MenuItemCallback) -> <init>
-    com.constantlab.wpconnect.views.menu.NavItem getFirstNavItem() -> a
     void setFirstNavItem(com.constantlab.wpconnect.views.menu.NavItem) -> a
-    java.util.List getMenuItemList() -> b
+    java.util.List getMenuItemList() -> a
     void generateMenu(android.view.Menu,java.util.List,boolean) -> a
     int getDrawableByName(java.lang.String) -> a
     android.content.Context access$000(com.constantlab.wpconnect.views.menu.MenuMaker) -> a
@@ -22509,8 +22508,10 @@ com.google.android.gms.ads.AdSize -> com.google.android.gms.ads.d:
     boolean isFluid() -> c
     java.lang.String toString() -> toString
     void <clinit>() -> <clinit>
-com.google.android.gms.ads.AdView -> com.google.android.gms.ads.e:
+com.google.android.gms.ads.AdView -> com.google.android.gms.ads.AdView:
     void <init>(android.content.Context) -> <init>
+    void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    void <init>(android.content.Context,android.util.AttributeSet,int) -> <init>
     com.google.android.gms.ads.VideoController zza() -> a
     java.lang.String getMediationAdapterClassName() -> getMediationAdapterClassName
     void setAdUnitId(java.lang.String) -> setAdUnitId
@@ -22523,9 +22524,11 @@ com.google.android.gms.ads.AdView -> com.google.android.gms.ads.e:
     com.google.android.gms.ads.AdSize getAdSize() -> getAdSize
     com.google.android.gms.ads.AdListener getAdListener() -> getAdListener
     void destroy() -> d
-com.google.android.gms.ads.BaseAdView -> com.google.android.gms.ads.f:
+com.google.android.gms.ads.BaseAdView -> com.google.android.gms.ads.e:
     com.google.android.gms.internal.zzmw zza -> a
     void <init>(android.content.Context,int) -> <init>
+    void <init>(android.content.Context,android.util.AttributeSet,int) -> <init>
+    void <init>(android.content.Context,android.util.AttributeSet,int,int) -> <init>
     void destroy() -> d
     com.google.android.gms.ads.AdListener getAdListener() -> getAdListener
     com.google.android.gms.ads.AdSize getAdSize() -> getAdSize
@@ -22539,10 +22542,10 @@ com.google.android.gms.ads.BaseAdView -> com.google.android.gms.ads.f:
     java.lang.String getMediationAdapterClassName() -> getMediationAdapterClassName
     void onLayout(boolean,int,int,int,int) -> onLayout
     void onMeasure(int,int) -> onMeasure
-com.google.android.gms.ads.Correlator -> com.google.android.gms.ads.g:
+com.google.android.gms.ads.Correlator -> com.google.android.gms.ads.f:
     com.google.android.gms.internal.zzld zza -> a
     com.google.android.gms.internal.zzld zza() -> a
-com.google.android.gms.ads.InterstitialAd -> com.google.android.gms.ads.h:
+com.google.android.gms.ads.InterstitialAd -> com.google.android.gms.ads.g:
     com.google.android.gms.internal.zzmy zza -> a
     void <init>(android.content.Context) -> <init>
     void loadAd(com.google.android.gms.ads.AdRequest) -> a
@@ -22552,13 +22555,13 @@ com.google.android.gms.ads.InterstitialAd -> com.google.android.gms.ads.h:
     void zza(com.google.android.gms.ads.reward.RewardedVideoAdListener) -> a
     void zza(boolean) -> a
     void setImmersiveMode(boolean) -> b
-com.google.android.gms.ads.MobileAds -> com.google.android.gms.ads.i:
+com.google.android.gms.ads.MobileAds -> com.google.android.gms.ads.h:
     void initialize(android.content.Context,java.lang.String) -> a
     void initialize(android.content.Context,java.lang.String,com.google.android.gms.ads.MobileAds$Settings) -> a
-com.google.android.gms.ads.MobileAds$Settings -> com.google.android.gms.ads.i$a:
+com.google.android.gms.ads.MobileAds$Settings -> com.google.android.gms.ads.h$a:
     com.google.android.gms.internal.zznb zza -> a
     com.google.android.gms.internal.zznb zza() -> a
-com.google.android.gms.ads.VideoController -> com.google.android.gms.ads.j:
+com.google.android.gms.ads.VideoController -> com.google.android.gms.ads.i:
     java.lang.Object zza -> a
     com.google.android.gms.internal.zzmm zzb -> b
     com.google.android.gms.ads.VideoController$VideoLifecycleCallbacks zzc -> c
@@ -22566,13 +22569,13 @@ com.google.android.gms.ads.VideoController -> com.google.android.gms.ads.j:
     void zza(com.google.android.gms.internal.zzmm) -> a
     com.google.android.gms.internal.zzmm zza() -> a
     void setVideoLifecycleCallbacks(com.google.android.gms.ads.VideoController$VideoLifecycleCallbacks) -> a
-com.google.android.gms.ads.VideoController$VideoLifecycleCallbacks -> com.google.android.gms.ads.j$a:
+com.google.android.gms.ads.VideoController$VideoLifecycleCallbacks -> com.google.android.gms.ads.i$a:
     void onVideoStart() -> a
     void onVideoPlay() -> b
     void onVideoPause() -> c
     void onVideoEnd() -> d
     void onVideoMute(boolean) -> a
-com.google.android.gms.ads.VideoOptions -> com.google.android.gms.ads.k:
+com.google.android.gms.ads.VideoOptions -> com.google.android.gms.ads.j:
     boolean zza -> a
     boolean zzb -> b
     boolean zzc -> c
@@ -24601,8 +24604,8 @@ com.google.android.gms.ads.search.SearchAdView -> com.google.android.gms.ads.d.b
     void setAdUnitId(java.lang.String) -> setAdUnitId
     void onLayout(boolean,int,int,int,int) -> onLayout
     void onMeasure(int,int) -> onMeasure
-com.google.android.gms.ads.zza -> com.google.android.gms.ads.l:
-com.google.android.gms.ads.zzb -> com.google.android.gms.ads.m:
+com.google.android.gms.ads.zza -> com.google.android.gms.ads.k:
+com.google.android.gms.ads.zzb -> com.google.android.gms.ads.l:
     com.google.android.gms.ads.AdSize zza(int,int,java.lang.String) -> a
 com.google.android.gms.common.ConnectionResult -> com.google.android.gms.common.a:
     com.google.android.gms.common.ConnectionResult zza -> a
@@ -37625,6 +37628,7 @@ com.google.android.gms.internal.zzmw -> com.google.android.gms.internal.aum:
     int zzp -> p
     boolean zzq -> q
     void <init>(android.view.ViewGroup,int) -> <init>
+    void <init>(android.view.ViewGroup,android.util.AttributeSet,boolean,int) -> <init>
     void <init>(android.view.ViewGroup,android.util.AttributeSet,boolean,com.google.android.gms.internal.zzkn,com.google.android.gms.internal.zzlt,int) -> <init>
     void <init>(android.view.ViewGroup,android.util.AttributeSet,boolean,com.google.android.gms.internal.zzkn,int) -> <init>
     void zza() -> a

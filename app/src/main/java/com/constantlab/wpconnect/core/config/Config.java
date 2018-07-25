@@ -34,7 +34,7 @@ public class Config {
     /**
      * Youtube Setup
      */
-    public static final String YOUTUBE_TOKEN = "";
+    public static final String YOUTUBE_TOKEN = "AIzaSyDmVCYLk6FWpJNFjXEvoFAS8ZApWliIbtU";
 
     /**
      * Favorites Options
@@ -65,7 +65,7 @@ public class Config {
      */
     public static final boolean ABMOB_IN_PRODUCTION = true;
     public static final String ABMOB_APP_ID = "ca-app-pub-5101466294034847~2851654543";
-    public static final String ADMOB_AD_UNIT_ID = "ca-app-pub-5101466294034847/9886986125";
+    public static final String ADMOB_AD_UNIT_ID = "ca-app-pub-5101466294034847/4012299763";// "ca-app-pub-5101466294034847/4012299763";
 
     /**
      * Wordpress Post Rendering
