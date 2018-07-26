@@ -1,4 +1,0 @@
-#Tue Jul 24 21:55:47 ICT 2018
-base.0=D\:\\project\\PrimaBerita\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "section_name": "Wordpress",
+      "section_name": "Prima Berita",
       "items": [
         {
           "title": "Recent Posts",
@@ -25,19 +25,12 @@
           "provider": "youtube_recents",
           "icon": "ic_youtube",
           "arguments": [
-            "UCpDJl2EmP7Oh90Vylx0dZtA"
-          ]
-        },
-        {
-          "title": "Playlists",
-          "provider": "youtube_playlists",
-          "icon": "ic_playlist_play",
-          "arguments": [
-            "UCpDJl2EmP7Oh90Vylx0dZtA"
+            "UCFRqBzNs3BOxTX2CFYxiKOA"
           ]
         }
       ]
-    },{
+    }
+      ,{
       "section_name": "Webview",
       "items": [
         {
@@ -66,7 +59,7 @@
           "provider": "facebook",
           "icon": "ic_facebook",
           "arguments": [
-            "141945449546920"
+            "158365071452156"
           ]
         }
       ]

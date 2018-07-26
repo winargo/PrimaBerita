@@ -1,31 +1,35 @@
 {
   "project_info": {
-    "project_number": "371933700961",
-    "firebase_url": "https://partysan-3831f.firebaseio.com",
-    "project_id": "partysan-3831f",
-    "storage_bucket": "partysan-3831f.appspot.com"
+    "project_number": "372727326100",
+    "firebase_url": "https://primaberita-ed90c.firebaseio.com",
+    "project_id": "primaberita-ed90c",
+    "storage_bucket": "primaberita-ed90c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:371933700961:android:8eae7a82fcbced2d",
+        "mobilesdk_app_id": "1:372727326100:android:fced2c24d2d7fc5a",
         "android_client_info": {
-          "package_name": "com.constantlab.wpconnect"
+          "package_name": "prima.optimasi.indonesia.primaberita"
         }
       },
       "oauth_client": [
         {
-          "client_id": "371933700961-gr8mmactopganvcbmkttd3h35u9kb7pp.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "372727326100-mn0hn8h5b7j5euu04uola37o2oggs905.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prima.optimasi.indonesia.primaberita",
+            "certificate_hash": "9bd61a2856d63dc17825204216bb114a843ad765"
+          }
         },
         {
-          "client_id": "371933700961-mh5ch00tnpcmqrq57h2lrnuhoc4kka6q.apps.googleusercontent.com",
+          "client_id": "372727326100-bdah39idbcj7si04t7obounfhp6t3aul.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA31eZGzuw27QAOVsQhnGTaL9ghRWImcqs"
+          "current_key": "AIzaSyBxaUQLj6zIIdeOitz5kRAyuWCwnZwbNxM"
         }
       ],
       "services": {
@@ -33,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372727326100-bdah39idbcj7si04t7obounfhp6t3aul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

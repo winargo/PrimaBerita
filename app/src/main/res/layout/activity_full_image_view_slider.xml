@@ -8,7 +8,7 @@
     tools:context=".views.activities.FullImageViewSliderActivity">
 
 
-    <com.constantlab.wpconnect.views.custom.HackyViewPager
+    <prima.optimasi.indonesia.primaberita.views.custom.HackyViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

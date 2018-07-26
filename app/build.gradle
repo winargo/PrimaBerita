@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.constantlab.wpconnect"
+        applicationId "prima.optimasi.indonesia.primaberita"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 7
@@ -12,8 +12,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled false
         }
     }
     productFlavors {

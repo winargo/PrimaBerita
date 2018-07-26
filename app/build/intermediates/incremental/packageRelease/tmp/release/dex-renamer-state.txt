@@ -1,4 +1,0 @@
-#Wed Jul 25 16:10:17 ICT 2018
-base.0=D\:\\project\\primaberita\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex
