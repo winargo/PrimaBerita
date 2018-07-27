@@ -21,7 +21,7 @@ import timber.log.Timber;
  */
 
 public class YoutubeVideosPresenter extends BasePresenter<YoutubeVideosContract.YoutubeVideosView> implements YoutubeVideosContract.ViewActions {
-    private static final int ITEM_REQUEST_LIMIT = 20;
+    private static final int ITEM_REQUEST_LIMIT = 10;
 
     private final DataManager mDataManager;
 

@@ -4,6 +4,12 @@
       "section_name": "Prima Berita",
       "items": [
         {
+          "title": "Home",
+          "provider": "Home",
+          "icon": "ic_home",
+          "arguments": null
+        },
+        {
           "title": "Recent Posts",
           "provider": "wordpress_recent",
           "icon": "ic_today",
@@ -18,14 +24,22 @@
       ]
     },
     {
-      "section_name": "Youtube",
+      "section_name": "Social",
       "items": [
         {
-          "title": "Recent Videos",
+          "title": "Youtube Videos",
           "provider": "youtube_recents",
           "icon": "ic_youtube",
           "arguments": [
             "UCFRqBzNs3BOxTX2CFYxiKOA"
+          ]
+        },
+        {
+          "title": "Instagram",
+          "provider": "instagram",
+          "icon": "ic_instagram",
+          "arguments": [
+            "6790192441"
           ]
         }
       ]
@@ -39,27 +53,6 @@
           "icon": "ic_web",
           "arguments": [
             "https://www.primaberita.com/"
-          ]
-        }
-      ]
-    },
-    {
-      "section_name": "Social",
-      "items": [
-        {
-          "title": "Instagram",
-          "provider": "instagram",
-          "icon": "ic_instagram",
-          "arguments": [
-            "6790192441"
-          ]
-        },
-        {
-          "title": "Facebook",
-          "provider": "facebook",
-          "icon": "ic_facebook",
-          "arguments": [
-            "158365071452156"
           ]
         }
       ]

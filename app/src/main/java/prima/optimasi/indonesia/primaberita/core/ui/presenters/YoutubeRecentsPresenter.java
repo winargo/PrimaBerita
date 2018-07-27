@@ -22,7 +22,7 @@ import timber.log.Timber;
 
 public class YoutubeRecentsPresenter extends BasePresenter<YoutubeRecentsContract.YoutubeRecentsView> implements YoutubeRecentsContract.ViewActions {
 
-    private static final int ITEM_REQUEST_LIMIT = 20;
+    private static final int ITEM_REQUEST_LIMIT = 10;
 
     private final DataManager mDataManager;
 

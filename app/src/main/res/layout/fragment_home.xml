@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <prima.optimasi.indonesia.primaberita.views.custom.TouchyWebView
+        android:layout_width="match_parent"
+        android:id="@+id/touchweb"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="48dp" />
+
+
+    <TextView
+        android:id="@+id/comingsoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/coming_soon"
+        android:textAppearance="@style/TextAppearance.RobotoMedium"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</FrameLayout>

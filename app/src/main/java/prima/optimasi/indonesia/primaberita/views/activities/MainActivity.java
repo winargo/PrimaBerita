@@ -17,12 +17,15 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +42,7 @@ import prima.optimasi.indonesia.primaberita.views.fragments.CategoriesFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.CustomCategoryFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.FacebookFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.FavoritesTabsFragment;
+import prima.optimasi.indonesia.primaberita.views.fragments.HomeFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.InstagramFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.InternetNotAvailableFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.RecentPostsFragment;
@@ -74,6 +78,11 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
     public AppBarLayout appBarLayout;
     NavigationView navigationView;
     MainPresenter mPresenter;
+
+    RelativeLayout navhome;
+    LayoutInflater inflater;
+    LinearLayout layoutwebview;
+
     BGABanner banner;
     CircleImageView headerImage;
     View headerView;
@@ -82,6 +91,11 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
     LinearLayout adContainer;
     private Boolean exit = false;
 
+   /* mWebView.getSettings().setLoadWithOverviewMode(true);
+mWebView.getSettings().setUseWideViewPort(true);
+mWebView.getSettings().setSupportZoom(true);
+mWebView.getSettings().setBuiltInZoomControls(true);
+*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +108,13 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
         mPresenter = new MainPresenter(DataManager.getInstance(this));
         menuMaker = new MenuMaker(this, this);
 
+        inflater = LayoutInflater.from(this);
+
+        View view = inflater.inflate(R.layout.nav_header_main,null);
+        View view1 = inflater.inflate(R.layout.app_bar_main,null);
+
+        layoutwebview = view1.findViewById(R.id.container);
+        navhome = view.findViewById(R.id.nav_home);
 
       //  AdView mAdView = findViewById(R.id.adView);
 
@@ -152,17 +173,27 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
     private void setDrawerHeader() {
         headerView = navigationView.getHeaderView(0);
         CircleImageView circleImageView = findViewById(R.id.imageView);
-        TextView username = findViewById(R.id.username);
+        TextView username = headerView.findViewById(R.id.username);
         if (isUserLoggedIn()) {
+            Log.e("true","1" );
             loggedIn = true;
             User user = applicationMain.user;
             if (user != null) {
-                Picasso.with(MainActivity.this).load("http://gravatar.com/avatar/" + MyUtils.md5(applicationMain.user.getEmail()) + "?size=150").into(circleImageView);
-                username.setText(user.getUsername());
+                Log.e("true","2" );
+                if(username!=null) {
+                    Log.e("true","3" );
+                    username.setText("Hi, "+user.getUsername());
+                    Log.e("true",user.getUsername() );
+                }
             }
+
         } else {
             loggedIn = false;
-            username.setText(R.string.app_name);
+            Log.e("false","1" );
+            if(username!=null){
+                Log.e("false","2" );
+                username.setText(R.string.app_name);
+            }
             navigationView.getMenu().findItem(MenuExtras.LOGOUT_ITEM_ID).setTitle("Login");
         }
     }
@@ -393,6 +424,8 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
 
     private Class<? extends Fragment> getFragmentForMenu(String provider) {
         switch (provider) {
+            case "Home":
+                return HomeFragment.class;
             case "wordpress_recent":
                 return RecentPostsFragment.class;
             case "wordpress_categories":

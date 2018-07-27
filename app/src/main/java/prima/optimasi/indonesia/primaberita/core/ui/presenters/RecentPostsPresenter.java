@@ -20,7 +20,7 @@ import okhttp3.ResponseBody;
 public class RecentPostsPresenter extends BasePresenter<RecentPostsContract.RecentPostsView> implements RecentPostsContract.ViewActions {
 
     private static final int ITEM_REQUEST_INITIAL_OFFSET = 1;
-    private static final int ITEM_REQUEST_LIMIT = 20;
+    private static final int ITEM_REQUEST_LIMIT = 10;
 
     private final DataManager mDataManager;
 

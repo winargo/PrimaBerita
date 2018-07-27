@@ -53,14 +53,15 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/container"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".views.activities.MainActivity" >
 
-    </FrameLayout>
+    </LinearLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>
