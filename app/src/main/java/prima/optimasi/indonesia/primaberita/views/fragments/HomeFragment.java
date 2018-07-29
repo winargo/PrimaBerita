@@ -110,7 +110,7 @@ public class HomeFragment extends BaseFragment implements RecentPostsContract.Re
         touchwebview.getSettings().setSupportZoom(true);
         touchwebview.getSettings().setBuiltInZoomControls(true);
 
-        touchwebview.loadUrl("primadigital.co.id");
+        touchwebview.loadUrl("https://primadigital.co.id");
 
         touchwebview.setWebViewClient(new WebViewClient() {
 

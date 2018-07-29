@@ -11,6 +11,7 @@ import android.preference.PreferenceManager;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -38,6 +39,7 @@ import prima.optimasi.indonesia.primaberita.core.data.model.User;
 import prima.optimasi.indonesia.primaberita.core.ui.contracts.MainContract;
 import prima.optimasi.indonesia.primaberita.core.ui.presenters.MainPresenter;
 import prima.optimasi.indonesia.primaberita.core.util.MyUtils;
+import prima.optimasi.indonesia.primaberita.generator;
 import prima.optimasi.indonesia.primaberita.views.fragments.CategoriesFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.CustomCategoryFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.FacebookFragment;
@@ -151,6 +153,9 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commitAllowingStateLoss();
+
     }
 
 
@@ -211,17 +216,16 @@ mWebView.getSettings().setBuiltInZoomControls(true);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            if (exit) {
+            if(generator.backhandling==1){
+
+                if(generator.navdata!=null && generator.menudata!=null){
+                    
+                }
+
+                generator.backhandling=0;
+            }else {
                 super.onBackPressed();
-            } else {
-                Toast.makeText(this, "Press again to exit", Toast.LENGTH_SHORT).show();
-                exit = true;
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        exit = false;
-                    }
-                }, 3 * 1000);
+                finish();
             }
         }
     }
@@ -489,6 +493,9 @@ mWebView.getSettings().setBuiltInZoomControls(true);
 
     @Override
     public void menuItemClicked(NavItem navItem, MenuItem item) {
+
+        generator.backhandling = 1;
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         if (navItem != null) {
@@ -522,4 +529,6 @@ mWebView.getSettings().setBuiltInZoomControls(true);
             }
         }
     }
+
+
 }
