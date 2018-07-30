@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -47,6 +48,7 @@ import prima.optimasi.indonesia.primaberita.views.fragments.FavoritesTabsFragmen
 import prima.optimasi.indonesia.primaberita.views.fragments.HomeFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.InstagramFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.InternetNotAvailableFragment;
+import prima.optimasi.indonesia.primaberita.views.fragments.PrimaDigitalFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.RecentPostsFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.WebViewFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.YouTubePlaylistFragment;
@@ -61,6 +63,9 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -93,6 +98,8 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
     LinearLayout adContainer;
     private Boolean exit = false;
 
+    FirebaseMessaging fmesage;
+
    /* mWebView.getSettings().setLoadWithOverviewMode(true);
 mWebView.getSettings().setUseWideViewPort(true);
 mWebView.getSettings().setSupportZoom(true);
@@ -103,6 +110,9 @@ mWebView.getSettings().setBuiltInZoomControls(true);
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
 
         MobileAds.initialize(this, Config.ABMOB_APP_ID);
 
@@ -154,7 +164,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commitAllowingStateLoss();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new RecentPostsFragment()).commitAllowingStateLoss();
 
     }
 
@@ -217,7 +227,9 @@ mWebView.getSettings().setBuiltInZoomControls(true);
             drawer.closeDrawer(GravityCompat.START);
         } else {
             if(generator.backhandling==1){
-
+                Bundle args = new Bundle();
+                args.putString(Constants.TAG_FOR_TITLE, "Recent Posts");
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, new RecentPostsFragment()).commitAllowingStateLoss();
                 if(generator.navdata!=null && generator.menudata!=null){
                     
                 }
@@ -450,6 +462,8 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                 return FavoritesTabsFragment.class;
             case "webview":
                 return WebViewFragment.class;
+            case "primawebview":
+                return PrimaDigitalFragment.class;
             default:
                 return null;
         }

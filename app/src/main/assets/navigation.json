@@ -3,12 +3,12 @@
     {
       "section_name": "Prima Berita",
       "items": [
-        {
+      /*  {
           "title": "Home",
           "provider": "Home",
           "icon": "ic_home",
           "arguments": null
-        },
+        },*/
         {
           "title": "Recent Posts",
           "provider": "wordpress_recent",
@@ -53,6 +53,13 @@
           "icon": "ic_web",
           "arguments": [
             "https://www.primaberita.com/"
+          ]
+        },{
+          "title": "Developer",
+          "provider": "primawebview",
+          "icon": "ic_web",
+          "arguments": [
+            "https://www.poi.co.id/"
           ]
         }
       ]

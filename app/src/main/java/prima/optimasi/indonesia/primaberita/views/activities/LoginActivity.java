@@ -5,13 +5,20 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatEditText;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.gson.Gson;
 
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.config.Config;
@@ -20,7 +27,6 @@ import prima.optimasi.indonesia.primaberita.core.data.DataManager;
 import prima.optimasi.indonesia.primaberita.core.data.model.User;
 import prima.optimasi.indonesia.primaberita.core.ui.contracts.LoginContract;
 import prima.optimasi.indonesia.primaberita.core.ui.presenters.LoginPresenter;
-import com.google.gson.Gson;
 
 public class LoginActivity extends BaseActivity implements LoginContract.LoginView {
 
@@ -35,6 +41,9 @@ public class LoginActivity extends BaseActivity implements LoginContract.LoginVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         mPresenter = new LoginPresenter(DataManager.getInstance(this));
+
+        FirebaseMessaging.getInstance().subscribeToTopic("News");
+
         initView();
         mPresenter.attachView(this);
         setupClicks();

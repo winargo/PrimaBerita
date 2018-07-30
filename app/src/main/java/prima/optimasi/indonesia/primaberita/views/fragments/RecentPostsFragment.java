@@ -55,6 +55,9 @@ public class RecentPostsFragment extends BaseFragment implements RecentPostsCont
         mPostAdapter = new PostsAdapter(getContext());
         if (getArguments() != null)
             title = getArguments().getString(Constants.TAG_FOR_TITLE);
+        else{
+            title = "Recent Posts";
+        }
     }
 
     @Nullable
