@@ -23,6 +23,7 @@ import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.application.ApplicationMain;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
 import prima.optimasi.indonesia.primaberita.core.data.model.Post;
+import prima.optimasi.indonesia.primaberita.generator;
 import prima.optimasi.indonesia.primaberita.views.activities.PostDetailActivity;
 import com.google.gson.Gson;
 import com.squareup.picasso.Callback;
@@ -76,6 +77,7 @@ public class PostsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     private void singleItemClick(int position) {
         try {
+            generator.createad(context);
             Intent intent = new Intent(context, PostDetailActivity.class);
             intent.putExtra(Constants.POST_TAG, mPostList.get(position));
             context.startActivity(intent);

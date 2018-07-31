@@ -62,6 +62,7 @@ import prima.optimasi.indonesia.primaberita.views.menu.Section;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -85,6 +86,8 @@ public class MainActivity extends BaseActivity implements MenuItemCallback, Main
     public AppBarLayout appBarLayout;
     NavigationView navigationView;
     MainPresenter mPresenter;
+
+    InterstitialAd mInterstitialAd;
 
     RelativeLayout navhome;
     LayoutInflater inflater;
@@ -127,6 +130,8 @@ mWebView.getSettings().setBuiltInZoomControls(true);
 
         layoutwebview = view1.findViewById(R.id.container);
         navhome = view.findViewById(R.id.nav_home);
+
+
 
       //  AdView mAdView = findViewById(R.id.adView);
 
@@ -207,7 +212,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
             Log.e("false","1" );
             if(username!=null){
                 Log.e("false","2" );
-                username.setText(R.string.app_name);
+                username.setText("Visitor");
             }
             navigationView.getMenu().findItem(MenuExtras.LOGOUT_ITEM_ID).setTitle("Login");
         }

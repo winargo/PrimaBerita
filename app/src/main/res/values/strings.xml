@@ -30,7 +30,7 @@
     <string name="reply_to">Reply to %1$s</string>
     <string name="dummy_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="no_posts">No Posts</string>
-    <string name="type_query">Type Query Here</string>
+    <string name="type_query">Cari Berita...</string>
     <string name="wp_connect">Prima Berita</string>
     <string name="videos">Videos</string>
     <string name="no_youtube_videos">No YouTube Videos</string>

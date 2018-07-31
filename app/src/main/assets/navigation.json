@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "section_name": "Prima Berita",
+      "section_name": "PrimaBerita",
       "items": [
       /*  {
           "title": "Home",
@@ -45,7 +45,7 @@
       ]
     }
       ,{
-      "section_name": "PrimaBerita",
+      "section_name": "Website",
       "items": [
         {
           "title": "PrimaBerita.com",

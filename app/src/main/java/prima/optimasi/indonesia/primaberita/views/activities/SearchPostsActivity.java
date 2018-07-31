@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,30 +54,25 @@ public class SearchPostsActivity extends BaseActivity implements SearchContract.
 
     private void setupClicks() {
 
-        searchBar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                try {
-                    if (i == EditorInfo.IME_ACTION_SEARCH) {
-                        searchBar.clearFocus();
-                        View view = SearchPostsActivity.this.getCurrentFocus();
-                        if (view != null) {
-                            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-                        }
-                        mSearchAdapter.removeAll();
-                        resetEndlessScroll();
-                        query = searchBar.getText().toString().trim();
+        searchBar.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                // If the event is a key-down event on the "enter" button
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    // Perform action on key press
+                    mSearchAdapter.removeAll();
+                    resetEndlessScroll();
+                    query = searchBar.getText().toString().trim();
 
-                        mPresenter.onRequestSearch(query, 1, null);
+                    mPresenter.onRequestSearch(query, 1, null);
 
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
+                    return true;
                 }
                 return false;
             }
         });
+
+
     }
 
     private void initView() {

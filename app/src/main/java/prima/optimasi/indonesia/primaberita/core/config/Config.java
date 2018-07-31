@@ -19,7 +19,7 @@ public class Config {
     /**
      * Category ID for slider
      */
-    public static final int SLIDER_CATEGORY_ID = 25;
+    public static final int SLIDER_CATEGORY_ID = 3321;
 
     /**
      * Instagram Setup
@@ -64,8 +64,8 @@ public class Config {
      * Admob Setup
      */
     public static final boolean ABMOB_IN_PRODUCTION = true;
-    public static final String ABMOB_APP_ID = "ca-app-pub-5101466294034847~4299611356";
-    public static final String ADMOB_AD_UNIT_ID =  "ca-app-pub-3940256099942544/6300978111";// "ca-app-pub-5101466294034847/1154573263";// "ca-app-pub-5101466294034847/4012299763";
+    public static final String ABMOB_APP_ID = "ca-app-pub-5101466294034847~2892823049";
+    public static final String ADMOB_AD_UNIT_ID =  "ca-app-pub-3940256099942544/6300978111";// "ca-app-pub-5101466294034847/5650848326";//
 
     /**
      * Wordpress Post Rendering
