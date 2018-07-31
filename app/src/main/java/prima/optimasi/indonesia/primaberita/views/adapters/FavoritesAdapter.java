@@ -209,7 +209,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Post
                         holder.postType.setText("gallery");
                         break;
                     case "standard":
-                        holder.postType.setText("standard");
+                        holder.postType.setText("News");
                         break;
                     case "link":
                         holder.postType.setText("link");
@@ -222,7 +222,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Post
                         break;
                 }
             } else {
-                holder.postType.setText("standard");
+                holder.postType.setText("News");
             }
         } catch (Exception e) {
             e.printStackTrace();

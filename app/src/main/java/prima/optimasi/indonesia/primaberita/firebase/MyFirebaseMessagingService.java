@@ -107,11 +107,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             NotificationChannel channel = new NotificationChannel("default",
                     "ShopeeFake",
                     NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription("Shopeefakedata");
+            channel.setDescription("Prima Berita");
             mNotificationManager.createNotificationChannel(channel);
         }
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), "default")
-                .setSmallIcon(R.drawable.logopetak) // notification icon
+                .setSmallIcon(R.drawable.logonotif) // notification icon
                 .setContentTitle(title) // title for notification
                 .setContentText(content)// message for notification
                 //  .setSound(alarmSound) // set alarm sound for notification

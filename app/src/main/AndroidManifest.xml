@@ -8,6 +8,12 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_icon"
+        android:resource="@drawable/logonotif" />
+    <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+        android:resource="@color/colorAccent" />
+
     <application
         android:name=".application.ApplicationMain"
         android:allowBackup="true"

@@ -10,7 +10,7 @@
           "arguments": null
         },*/
         {
-          "title": "Recent Posts",
+          "title": "Recent News",
           "provider": "wordpress_recent",
           "icon": "ic_today",
           "arguments": null
@@ -27,7 +27,7 @@
       "section_name": "Social",
       "items": [
         {
-          "title": "Youtube Videos",
+          "title": "Recent Videos",
           "provider": "youtube_recents",
           "icon": "ic_youtube",
           "arguments": [
@@ -45,17 +45,17 @@
       ]
     }
       ,{
-      "section_name": "Webview",
+      "section_name": "PrimaBerita",
       "items": [
         {
-          "title": "Prima Berita",
+          "title": "PrimaBerita.com",
           "provider": "webview",
           "icon": "ic_web",
           "arguments": [
             "https://www.primaberita.com/"
           ]
         },{
-          "title": "Developer",
+          "title": "Developer Site",
           "provider": "primawebview",
           "icon": "ic_web",
           "arguments": [

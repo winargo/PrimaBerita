@@ -260,7 +260,7 @@ public class PostsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     holder.postType.setText("gallery");
                     break;
                 case "standard":
-                    holder.postType.setText("standard");
+                    holder.postType.setText("News");
                     break;
                 case "link":
                     holder.postType.setText("link");
@@ -272,10 +272,10 @@ public class PostsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     holder.postType.setText("quote");
                     break;
                 default:
-                    holder.postType.setText("standard");
+                    holder.postType.setText("News");
             }
         } else {
-            holder.postType.setText("standard");
+            holder.postType.setText("News");
         }
         try {
             String url = post.getFeaturedImage().get(0).getUrl();

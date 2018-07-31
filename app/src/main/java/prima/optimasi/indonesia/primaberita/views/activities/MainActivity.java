@@ -337,7 +337,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                                 type.setText("gallery");
                                 break;
                             case "standard":
-                                type.setText("standard");
+                                type.setText("News");
                                 break;
                             case "link":
                                 type.setText("link");
@@ -350,7 +350,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                                 break;
                         }
                     } else {
-                        type.setText("standard");
+                        type.setText("News");
                     }
                     final ProgressBar progressBar = itemView.findViewById(R.id.progress);
                     Picasso.with(MainActivity.this).load(model.getFeaturedImage().get(0).getUrl()).into(image, new Callback() {
