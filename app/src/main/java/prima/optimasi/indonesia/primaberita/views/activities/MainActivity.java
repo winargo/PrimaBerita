@@ -119,6 +119,8 @@ mWebView.getSettings().setBuiltInZoomControls(true);
 
         MobileAds.initialize(this, Config.ABMOB_APP_ID);
 
+        generator.createad(this);
+
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         mPresenter = new MainPresenter(DataManager.getInstance(this));
         menuMaker = new MenuMaker(this, this);

@@ -21,6 +21,7 @@ public class generator {
     public static void createad(Context context){
         if(mInterstitialAd!=null){
             mInterstitialAd.loadAd(new AdRequest.Builder().build());
+            mInterstitialAd.show();
 
             mInterstitialAd.setAdListener(new AdListener() {
                 @Override

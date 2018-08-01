@@ -65,7 +65,7 @@ public class Config {
      */
     public static final boolean ABMOB_IN_PRODUCTION = true;
     public static final String ABMOB_APP_ID = "ca-app-pub-5101466294034847~2892823049";
-    public static final String ADMOB_AD_UNIT_ID =  "ca-app-pub-3940256099942544/6300978111";// "ca-app-pub-5101466294034847/5650848326";//
+    public static final String ADMOB_AD_UNIT_ID =  "ca-app-pub-5101466294034847/5650848326";// "ca-app-pub-5101466294034847/5650848326";//
 
     /**
      * Wordpress Post Rendering
