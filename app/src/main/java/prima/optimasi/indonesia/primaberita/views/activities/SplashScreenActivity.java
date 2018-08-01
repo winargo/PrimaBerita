@@ -14,6 +14,13 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
 import prima.optimasi.indonesia.primaberita.core.data.DataManager;
@@ -34,6 +41,10 @@ public class SplashScreenActivity extends BaseActivity implements SplashScreenCo
         if (getSupportActionBar() != null)
             getSupportActionBar().hide();
         setContentView(R.layout.activity_splash_screen);
+
+
+
+
         mLogo = findViewById(R.id.logo);
         progressBar = findViewById(R.id.progress_bar);
         mPresenter = new SplashScreenPresenter(DataManager.getInstance(this));
