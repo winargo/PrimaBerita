@@ -20,6 +20,8 @@ import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
 import prima.optimasi.indonesia.primaberita.core.data.model.YoutubeVideo;
 import prima.optimasi.indonesia.primaberita.core.util.MyUtils;
+import prima.optimasi.indonesia.primaberita.generator;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.squareup.picasso.Callback;
@@ -72,6 +74,8 @@ public class YoutubeVideosAdapter extends RecyclerView.Adapter<RecyclerView.View
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                generator.adcount++;
+                generator.createad(mContext);
                 if (mListInteractionListener != null)
                     mListInteractionListener.onVideoClicked(mVideoList.get(holder.getAdapterPosition()), v, holder.getAdapterPosition());
             }

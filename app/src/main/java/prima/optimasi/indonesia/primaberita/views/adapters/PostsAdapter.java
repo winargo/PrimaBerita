@@ -77,6 +77,7 @@ public class PostsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     private void singleItemClick(int position) {
         try {
+            generator.adcount++;
             generator.createad(context);
             Intent intent = new Intent(context, PostDetailActivity.class);
             intent.putExtra(Constants.POST_TAG, mPostList.get(position));

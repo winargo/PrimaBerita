@@ -18,6 +18,8 @@ import android.widget.TextView;
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.application.ApplicationMain;
 import prima.optimasi.indonesia.primaberita.core.data.model.Social;
+import prima.optimasi.indonesia.primaberita.generator;
+
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -103,6 +105,8 @@ public class InstagramAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             public void onClick(View view) {
                 if (holder.getAdapterPosition() != RecyclerView.NO_POSITION) {
                     if (mListInteractionListener != null) {
+                        generator.adcount++;
+                        generator.createad(context);
                         mListInteractionListener.onListClick(instagramPhotoList.get(holder.getAdapterPosition()), view, holder.getAdapterPosition());
                     }
                 }
@@ -114,6 +118,8 @@ public class InstagramAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             public void onClick(View view) {
                 if (holder.getAdapterPosition() != RecyclerView.NO_POSITION) {
                     if (mListInteractionListener != null) {
+                        generator.adcount++;
+                        generator.createad(context);
                         mListInteractionListener.onPlayVideoClick(instagramPhotoList.get(holder.getAdapterPosition()), view, holder.getAdapterPosition());
                     }
                 }
@@ -123,12 +129,15 @@ public class InstagramAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         holder.favoriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 int position = holder.getAdapterPosition();
                 if (position != RecyclerView.NO_POSITION) {
                     if (mListInteractionListener != null) {
                         if (checkForFavorite(instagramPhotoList.get(position))) {
                             mListInteractionListener.onRemoveFromFavorites(instagramPhotoList.get(holder.getAdapterPosition()), view, holder.getAdapterPosition());
                         } else {
+                            generator.adcount++;
+                            generator.createad(context);
                             mListInteractionListener.onAddToFavorites(instagramPhotoList.get(holder.getAdapterPosition()), view, holder.getAdapterPosition());
                         }
                     }

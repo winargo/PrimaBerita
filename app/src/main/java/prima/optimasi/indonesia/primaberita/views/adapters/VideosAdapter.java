@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.data.model.YoutubeVideo;
+import prima.optimasi.indonesia.primaberita.generator;
 import prima.optimasi.indonesia.primaberita.views.util.widgets.ytplayer.YouTubePlayerActivity;
 import com.squareup.picasso.Picasso;
 
@@ -55,6 +56,8 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.VideoHolde
 
     private void singleItemClick(int adapterPosition) {
         try {
+            generator.adcount++;
+            generator.createad(context);
             Intent intent = new Intent(context,
                     YouTubePlayerActivity.class);
             intent.putExtra(YouTubePlayerActivity.EXTRA_VIDEO_ID, videoList.get(adapterPosition).getId());

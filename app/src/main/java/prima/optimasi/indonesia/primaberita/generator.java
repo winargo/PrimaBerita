@@ -14,46 +14,55 @@ public class generator {
     public static int backhandling = 0;
     public static NavItem navdata =null;
     public static MenuItem menudata=null;
+    public static int adcount = 0;
 
     public static InterstitialAd mInterstitialAd = null;
 
 
     public static void createad(Context context){
-        if(mInterstitialAd!=null){
-            mInterstitialAd.loadAd(new AdRequest.Builder().build());
-            mInterstitialAd.show();
 
-            mInterstitialAd.setAdListener(new AdListener() {
-                @Override
-                public void onAdLoaded() {
-                    // Code to be executed when an ad finishes loading.
-                }
+        if(adcount==2) {
 
-                @Override
-                public void onAdFailedToLoad(int errorCode) {
-                    // Code to be executed when an ad request fails.
-                }
+            if (mInterstitialAd != null) {
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+                adcount=0;
 
-                @Override
-                public void onAdOpened() {
-                    // Code to be executed when the ad is displayed.
-                }
+                mInterstitialAd.setAdListener(new AdListener() {
+                    @Override
+                    public void onAdLoaded() {
+                        mInterstitialAd.show();
+                        // Code to be executed when an ad finishes loading.
+                    }
 
-                @Override
-                public void onAdLeftApplication() {
-                    // Code to be executed when the user has left the app.
-                }
+                    @Override
+                    public void onAdFailedToLoad(int errorCode) {
+                        // Code to be executed when an ad request fails.
+                    }
 
-                @Override
-                public void onAdClosed() {
-                    // Code to be executed when when the interstitial ad is closed.
-                }
-            });
+                    @Override
+                    public void onAdOpened() {
+                        // Code to be executed when the ad is displayed.
+                    }
+
+                    @Override
+                    public void onAdLeftApplication() {
+                        // Code to be executed when the user has left the app.
+                    }
+
+                    @Override
+                    public void onAdClosed() {
+                        // Code to be executed when when the interstitial ad is closed.
+                    }
+                });
+            } else {
+                mInterstitialAd = new InterstitialAd(context);
+                mInterstitialAd.setAdUnitId(Config.ADMOB_AD_UNIT_ID);
+                createad(context);
+            }
         }
-        else {
-            mInterstitialAd = new InterstitialAd(context);
-            mInterstitialAd.setAdUnitId(Config.ADMOB_AD_UNIT_ID);
-            createad(context);
+        else
+        {
+
         }
     }
 }

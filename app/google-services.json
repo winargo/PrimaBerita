@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "372727326100-am1rrkcf91fsjv6frddcls6l27acnf19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prima.optimasi.indonesia.primaberita",
+            "certificate_hash": "9150f4c156ab9e3747be9a99019c5b56850f30da"
+          }
+        },
+        {
           "client_id": "372727326100-bdah39idbcj7si04t7obounfhp6t3aul.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -40,7 +48,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "372727326100-bdah39idbcj7si04t7obounfhp6t3aul.apps.googleusercontent.com",
+              "client_id": "372727326100-l6iod80a7d8on8t2j9u5ker9jmhec15l.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -48,7 +56,8 @@
         "ads_service": {
           "status": 2
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-5101466294034847~2892823049"
     }
   ],
   "configuration_version": "1"

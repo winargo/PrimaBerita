@@ -3,6 +3,7 @@ package prima.optimasi.indonesia.primaberita.views.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -205,6 +206,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                 if(username!=null) {
                     Log.e("true","3" );
                     username.setText("Hi, "+user.getUsername());
+                    username.setTextColor(Color.BLACK);
                     Log.e("true",user.getUsername() );
                 }
             }
@@ -214,7 +216,8 @@ mWebView.getSettings().setBuiltInZoomControls(true);
             Log.e("false","1" );
             if(username!=null){
                 Log.e("false","2" );
-                username.setText("Visitor");
+                username.setText("Hello, Visitor");
+                username.setTextColor(Color.BLACK);
             }
             navigationView.getMenu().findItem(MenuExtras.LOGOUT_ITEM_ID).setTitle("Login");
         }
@@ -468,6 +471,8 @@ mWebView.getSettings().setBuiltInZoomControls(true);
             case "favorites":
                 return FavoritesTabsFragment.class;
             case "webview":
+                generator.adcount++;
+                generator.createad(this);
                 return WebViewFragment.class;
             case "primawebview":
                 return PrimaDigitalFragment.class;
