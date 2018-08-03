@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.amulyakhare.textdrawable.TextDrawable;
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.data.model.Category;
+import prima.optimasi.indonesia.primaberita.generator;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

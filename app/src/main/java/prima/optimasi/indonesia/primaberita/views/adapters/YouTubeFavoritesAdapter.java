@@ -18,6 +18,9 @@ import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
 import prima.optimasi.indonesia.primaberita.core.data.model.YoutubeVideo;
 import prima.optimasi.indonesia.primaberita.core.util.MyUtils;
+import prima.optimasi.indonesia.primaberita.generator;
+import prima.optimasi.indonesia.primaberita.views.activities.PostDetailActivity;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.squareup.picasso.Callback;

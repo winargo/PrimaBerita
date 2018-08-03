@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
 import prima.optimasi.indonesia.primaberita.core.data.model.Gallery;
+import prima.optimasi.indonesia.primaberita.generator;
 import prima.optimasi.indonesia.primaberita.views.activities.FullImageSliderActivity;
 import com.squareup.picasso.Picasso;
 
@@ -72,6 +73,7 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.PhotoHolde
 
     private void singleItemClick(int position) {
         try {
+
             Intent intent = new Intent(context, FullImageSliderActivity.class);
             intent.putParcelableArrayListExtra(Constants.IMAGES_LIST_KEY, (ArrayList<? extends Parcelable>) galleryList);
             intent.putExtra(Constants.IMAGE_POSITION_KEY, position);

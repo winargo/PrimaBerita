@@ -35,6 +35,8 @@ import android.widget.VideoView;
 
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
+import prima.optimasi.indonesia.primaberita.generator;
+
 import com.github.chrisbanes.photoview.PhotoView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -337,6 +339,8 @@ public class PhotoDetailActivity extends AppCompatActivity {
         if (item.getItemId() == android.R.id.home) {
             onBackPressed();
         } else if (item.getItemId() == R.id.download_item) {
+            generator.adcount++;
+            generator.createad(PhotoDetailActivity.this);
             file_download(url, PhotoDetailActivity.this);
         } else if (item.getItemId() == R.id.share_item) {
             shareImage();
