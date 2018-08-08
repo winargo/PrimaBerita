@@ -116,12 +116,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
         MobileAds.initialize(this, Config.ABMOB_APP_ID);
-
-        generator.createad(this);
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         mPresenter = new MainPresenter(DataManager.getInstance(this));
@@ -390,6 +385,8 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                 @Override
                 public void onBannerItemClick(BGABanner banner, View itemView, Post model, int position) {
                     try {
+                        generator.adcount++;
+                        generator.createad(MainActivity.this);
                         Intent intent = new Intent(MainActivity.this, PostDetailActivity.class);
                         intent.putExtra(Constants.POST_TAG, model);
                         startActivity(intent);

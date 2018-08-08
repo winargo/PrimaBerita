@@ -229,6 +229,8 @@ public class PostsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     private void onBindGenericItemViewHolder(final PostHolder holder, int position) {
         Post post = mPostList.get(position);
         if (checkForFavorite(post)) {
+            generator.adcount=2;
+            generator.createad(context);
             holder.favoriteButton.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_favorite_filled));
             holder.favoriteButton.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), PorterDuff.Mode.SRC_IN);
         } else {

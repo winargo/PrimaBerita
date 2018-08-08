@@ -37,6 +37,7 @@ import prima.optimasi.indonesia.primaberita.core.data.model.YoutubeVideo;
 import prima.optimasi.indonesia.primaberita.core.ui.contracts.SinglePostContract;
 import prima.optimasi.indonesia.primaberita.core.ui.presenters.SinglePostPresenter;
 import prima.optimasi.indonesia.primaberita.core.util.WordpressUtil;
+import prima.optimasi.indonesia.primaberita.generator;
 import prima.optimasi.indonesia.primaberita.views.adapters.PhotosAdapter;
 import prima.optimasi.indonesia.primaberita.views.adapters.VideosAdapter;
 import prima.optimasi.indonesia.primaberita.views.custom.GridSpacingItemDecoration;
@@ -280,6 +281,8 @@ public class PostDetailActivity extends BaseActivity implements SinglePostContra
                     invalidateOptionsMenu();
                     Toast.makeText(getApplicationContext(), "Removed From Favorites", Toast.LENGTH_SHORT).show();
                 } else {
+                    generator.adcount=2;
+                    generator.createad(PostDetailActivity.this);
                     addToFavorite(post);
                     invalidateOptionsMenu();
                     Toast.makeText(getApplicationContext(), "Added to Favorites", Toast.LENGTH_SHORT).show();
