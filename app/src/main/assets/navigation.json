@@ -35,11 +35,19 @@
           ]
         },
         {
-          "title": "Instagram",
-          "provider": "instagram",
+          "title": "PrimaBerita",
+          "provider": "primaberita",
           "icon": "ic_instagram",
           "arguments": [
             "6790192441"
+          ]
+        },
+        {
+          "title": "PrimaBerita Plus+",
+          "provider": "primaberita plus+",
+          "icon": "ic_instagram",
+          "arguments": [
+            "8386293646"
           ]
         }
       ]

@@ -48,6 +48,7 @@ import prima.optimasi.indonesia.primaberita.views.fragments.FacebookFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.FavoritesTabsFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.HomeFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.InstagramFragment;
+import prima.optimasi.indonesia.primaberita.views.fragments.InstagramFragmentplus;
 import prima.optimasi.indonesia.primaberita.views.fragments.InternetNotAvailableFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.PrimaDigitalFragment;
 import prima.optimasi.indonesia.primaberita.views.fragments.RecentPostsFragment;
@@ -464,8 +465,10 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                 return YouTubeRecentsFragment.class;
             case "youtube_playlist":
                 return YouTubeVideosFragment.class;
-            case "instagram":
+            case "primaberita":
                 return InstagramFragment.class;
+            case "primaberita plus+":
+                return InstagramFragmentplus.class;
             case "facebook":
                 return FacebookFragment.class;
             case "favorites":

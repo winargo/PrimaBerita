@@ -26,6 +26,8 @@ public class Config {
      */
     public static final String INSTAGRAM_TOKEN = "6790192441.f677f0e.ac5dfb87a24b410e9e71b1fe7ba5940a";
 
+    public static final String INSTAGRAM_TOKEN_PLUS = "8386293646.0460d13.461788ace92745759cf8190da957ec96";
+
     /**
      * Facebook Setup
      */
