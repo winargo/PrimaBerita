@@ -24,10 +24,12 @@ public class Config {
     /**
      * Instagram Setup
      */
-    public static final String INSTAGRAM_TOKEN = "6790192441.f677f0e.ac5dfb87a24b410e9e71b1fe7ba5940a";
+    public static final String INSTAGRAM_TOKEN = "6790192441.2a6f9f5.e424576de5a548bdbf42b13bb21f2983";
 
     public static final String INSTAGRAM_TOKEN_PLUS = "8386293646.0460d13.461788ace92745759cf8190da957ec96";
-
+    /*
+    * https://www.instagram.com/oauth/authorize?client_id=YOUR_CLIENT&redirect_uri=YOUR_REDIRECT_URI&scope=basic+likes+comments+relationships+public_content&response_type=token
+    * */
     /**
      * Facebook Setup
      */

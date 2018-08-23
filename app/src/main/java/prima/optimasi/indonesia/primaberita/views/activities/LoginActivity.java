@@ -66,13 +66,18 @@ public class LoginActivity extends BaseActivity implements LoginContract.LoginVi
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if (!username.getText().toString().isEmpty() && !password.getText().toString().isEmpty()) {
                     mPresenter.onRequestLoginWithWordpress(username.getText().toString().trim(), password.getText().toString().trim());
                     InputMethodManager inputManager = (InputMethodManager)
                             getSystemService(Context.INPUT_METHOD_SERVICE);
 
-                    inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
-                            InputMethodManager.HIDE_NOT_ALWAYS);
+                    try {
+                        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                                InputMethodManager.HIDE_NOT_ALWAYS);
+                    }catch (Exception e){
+                        Log.e("Input token error",e.getMessage().toString());
+                    }
                 } else {
                     Toast.makeText(getApplicationContext(), "Username or Password should not be empty", Toast.LENGTH_SHORT).show();
                 }
