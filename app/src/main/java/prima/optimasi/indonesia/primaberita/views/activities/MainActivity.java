@@ -125,11 +125,20 @@ mWebView.getSettings().setBuiltInZoomControls(true);
 
         MobileAds.initialize(this, Config.ABMOB_APP_ID);
 
+
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         mPresenter = new MainPresenter(DataManager.getInstance(this));
         menuMaker = new MenuMaker(this, this);
 
         inflater = LayoutInflater.from(this);
+
+        if(getSharedPreferences("primaberita",MODE_PRIVATE).getString("username","").equals("")){
+            getSharedPreferences("primaberita",MODE_PRIVATE).edit().putString("username",""+Calendar.getInstance().getTimeInMillis()).apply();
+        }
+        else {
+
+        }
+
 
         if(getSharedPreferences("primaberita",MODE_PRIVATE).getInt("statustoken",0)==0){
             if(getSharedPreferences("primaberita",MODE_PRIVATE).getString("token","").equals("")){
@@ -595,7 +604,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
                     .addPathSegment("apnwp")
                     .addPathSegment("register")
                     .addQueryParameter("os_type", "android")
-                    .addQueryParameter("user_email_id", Calendar.getInstance().getTimeInMillis()+"@gmail.com")
+                    .addQueryParameter("user_email_id", getSharedPreferences("primaberita",MODE_PRIVATE).getString("username","")+"@gmail.com")
                     .addQueryParameter("device_token", token)
                     // Each addPathSegment separated add a / symbol to the final url
                     // finally my Full URL is:
@@ -631,7 +640,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
             Log.e("REsult", "onPostExecute"+ response.toString() );
             try {
                 if(response.getString("error").equals(200)){
-                    getSharedPreferences("primaberita",MODE_PRIVATE).edit().putInt("statustoken",1);
+                    getSharedPreferences("primaberita",MODE_PRIVATE).edit().putInt("statustoken",1).commit();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
