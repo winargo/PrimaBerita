@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -32,6 +33,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import prima.optimasi.indonesia.primaberita.R;
 import prima.optimasi.indonesia.primaberita.core.config.Config;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
@@ -73,11 +78,13 @@ import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import cn.bingoogolapple.bgabanner.BGABanner;
@@ -123,6 +130,16 @@ mWebView.getSettings().setBuiltInZoomControls(true);
         menuMaker = new MenuMaker(this, this);
 
         inflater = LayoutInflater.from(this);
+
+        if(getSharedPreferences("primaberita",MODE_PRIVATE).getInt("statustoken",0)==0){
+            if(getSharedPreferences("primaberita",MODE_PRIVATE).getString("token","").equals("")){
+                Log.e("tokenempty",getSharedPreferences("primaberita",MODE_PRIVATE).getString("token",""));
+            }
+            else {
+                sendtoken token = new sendtoken(getSharedPreferences("primaberita",MODE_PRIVATE).getString("token",""));
+                token.execute();
+            }
+        }
 
         View view = inflater.inflate(R.layout.nav_header_main,null);
         View view1 = inflater.inflate(R.layout.app_bar_main,null);
@@ -556,5 +573,80 @@ mWebView.getSettings().setBuiltInZoomControls(true);
         }
     }
 
+
+    public class sendtoken extends AsyncTask<String,String,String> {
+
+        JSONObject response=null;
+        String token="";
+
+        public sendtoken(String Token){
+            token=Token;
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+
+            OkHttpClient client = new OkHttpClient();
+
+            HttpUrl httpUrl = new HttpUrl.Builder()
+                    .scheme("https")
+                    .host("primaberita.com")
+                    .addPathSegment("wp-json")
+                    .addPathSegment("apnwp")
+                    .addPathSegment("register")
+                    .addQueryParameter("os_type", "android")
+                    .addQueryParameter("user_email_id", Calendar.getInstance().getTimeInMillis()+"@gmail.com")
+                    .addQueryParameter("device_token", token)
+                    // Each addPathSegment separated add a / symbol to the final url
+                    // finally my Full URL is:
+                    // https://subdomain.apiweb.com/api/v1/students/8873?auth_token=71x23768234hgjwqguygqew
+                    .build();
+
+            Log.e("URL TOKEN", "URL data"+httpUrl );
+
+            //https://primaberita.com/wp-json/apnwp/register
+
+
+            Request request = new Request.Builder()
+                    .url(httpUrl)
+                    .build();
+            Response responses = null;
+
+            try {
+                responses = client.newCall(request).execute();
+                response = new JSONObject(responses.body().string());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            Log.e("REsult", "onPostExecute"+ response.toString() );
+            try {
+                if(response.getString("error").equals(200)){
+                    getSharedPreferences("primaberita",MODE_PRIVATE).edit().putInt("statustoken",1);
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+        }
+    }
 
 }

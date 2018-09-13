@@ -4,9 +4,11 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -14,14 +16,20 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.Calendar;
+
+import okhttp3.FormBody;
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 import prima.optimasi.indonesia.primaberita.R;
+import prima.optimasi.indonesia.primaberita.core.config.Config;
 import prima.optimasi.indonesia.primaberita.core.data.Constants;
 import prima.optimasi.indonesia.primaberita.core.data.DataManager;
 import prima.optimasi.indonesia.primaberita.core.ui.contracts.SplashScreenContract;
@@ -132,4 +140,6 @@ public class SplashScreenActivity extends BaseActivity implements SplashScreenCo
             finish();
         }
     }
+
+
 }
