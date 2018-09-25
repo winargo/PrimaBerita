@@ -1,6 +1,9 @@
 package prima.optimasi.indonesia.primaberita.views.activities;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,9 +11,12 @@ import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,6 +49,72 @@ public class LoginActivity extends BaseActivity implements LoginContract.LoginVi
         mPresenter = new LoginPresenter(DataManager.getInstance(this));
 
         FirebaseMessaging.getInstance().subscribeToTopic("News");
+        if(getSharedPreferences("primaberita",MODE_PRIVATE).getString("privacy","0").equals("0")){
+            AlertDialog.Builder build = new AlertDialog.Builder(this).setTitle("Terms And Condition");
+
+            View v = LayoutInflater.from(this).inflate(R.layout.layout_privacy,null);
+            CheckBox cb = v.findViewById(R.id.privacychecked);
+
+            LinearLayout l = v.findViewById(R.id.layoutcheckprivacy);
+
+            l.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(cb.isChecked()){
+                        cb.setChecked(false);
+                    }
+                    else{
+                        cb.setChecked(true);
+                    }
+                }
+            });
+
+            build.setView(v);
+
+
+            build.setCancelable(false);
+
+            build.setPositiveButton("Proceed",null);
+            build.setNegativeButton("No,Thanks",null);
+
+            AlertDialog builds = build.create();
+            builds.setOnShowListener(new DialogInterface.OnShowListener() {
+
+                @Override
+                public void onShow(DialogInterface dialogInterface) {
+
+                    Button button = ((AlertDialog) builds).getButton(AlertDialog.BUTTON_POSITIVE);
+                    button.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View view) {
+
+                            if(cb.isChecked()){
+                                getSharedPreferences("primaberita",MODE_PRIVATE).edit().putString("privacy","1").apply();
+                                builds.dismiss();
+                            }
+                            else {
+                                Toast.makeText(LoginActivity.this, "You must agree to Term and Condition", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+
+                    Button button1 = ((AlertDialog) builds).getButton(AlertDialog.BUTTON_NEGATIVE);
+                    button1.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View view) {
+                            builds.dismiss();
+                            LoginActivity.this.finish();
+                        }
+                    });
+                }
+            });
+
+            builds.show();
+
+        }
+
 
         initView();
         mPresenter.attachView(this);

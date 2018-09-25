@@ -637,8 +637,8 @@ mWebView.getSettings().setBuiltInZoomControls(true);
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            Log.e("REsult", "onPostExecute"+ response.toString() );
             try {
+                Log.e("REsult", "onPostExecute"+ response.toString() );
                 if(response.getString("error").equals(200)){
                     getSharedPreferences("primaberita",MODE_PRIVATE).edit().putInt("statustoken",1).commit();
                 }
