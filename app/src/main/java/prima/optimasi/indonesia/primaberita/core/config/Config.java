@@ -24,7 +24,7 @@ public class Config {
     /**
      * Instagram Setup
      */
-    public static final String INSTAGRAM_TOKEN = "6790192441.2a6f9f5.e424576de5a548bdbf42b13bb21f2983";
+    public static final String INSTAGRAM_TOKEN = "6790192441.5615b1e.58537afbb5a54c01b9fbe1a4e33f4088";
 
     public static final String INSTAGRAM_TOKEN_PLUS = "8386293646.0460d13.461788ace92745759cf8190da957ec96";
     /*
