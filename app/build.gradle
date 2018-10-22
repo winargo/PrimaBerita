@@ -7,8 +7,13 @@ android {
         applicationId "prima.optimasi.indonesia.primaberita"
         minSdkVersion 19
         targetSdkVersion 26
+<<<<<<< HEAD
         versionCode 6
         versionName '1.1.6'
+=======
+        versionCode 7
+        versionName '1.1.7'
+>>>>>>> 1ea09591e610f221208c2ee52a7e68ae550a0c55
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
