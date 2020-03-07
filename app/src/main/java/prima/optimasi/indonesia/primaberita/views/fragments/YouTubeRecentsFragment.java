@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,7 @@ public class YouTubeRecentsFragment extends BaseFragment implements YoutubeRecen
         if (getArguments() != null) {
             title = getArguments().getString(Constants.TAG_FOR_TITLE);
             String[] arguments = getArguments().getStringArray(Constants.TAG_FOR_ARGUMENTS);
+            Log.e("argumentdata",arguments[0] );
             channelId = arguments[0];
         }
 

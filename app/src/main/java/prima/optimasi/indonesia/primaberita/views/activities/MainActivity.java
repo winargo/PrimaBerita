@@ -473,6 +473,7 @@ mWebView.getSettings().setBuiltInZoomControls(true);
     }
 
     private Class<? extends Fragment> getFragmentForMenu(String provider) {
+        Log.e("caseconstants",provider );
         switch (provider) {
             case "Home":
                 return HomeFragment.class;

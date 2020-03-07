@@ -1,6 +1,7 @@
 package prima.optimasi.indonesia.primaberita.core.data;
 
 import android.content.Context;
+import android.util.Log;
 
 import prima.optimasi.indonesia.primaberita.core.config.Config;
 import prima.optimasi.indonesia.primaberita.core.data.network.RemoteCallback;
@@ -82,6 +83,7 @@ public class DataManager {
 
     public void getYouTubePlaylists(String channelId, String pageToken, int maxResults, RemoteCallback<ResponseBody> remoteCallback) {
         String url = "https://www.googleapis.com/youtube/v3/playlists?part=snippet&type=video";
+        Log.e("chosenurl",url );
         mWpConnectService.getYouTubePlaylists(
                 url,
                 pageToken,
@@ -92,6 +94,7 @@ public class DataManager {
 
     public void getYouTubeVideosForPlaylist(String playlistId, String pageToken, int maxResults, RemoteCallback<ResponseBody> remoteCallback) {
         String url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet";
+        Log.e("chosenurl",url );
         mWpConnectService.getYouTubeVideosForPlaylist(
                 url,
                 pageToken,
@@ -102,11 +105,13 @@ public class DataManager {
 
     public void getYouTubeVideos(String ids, String pageToken, int maxResults, RemoteCallback<ResponseBody> remoteCallback) {
         String url = "https://www.googleapis.com/youtube/v3/videos?part=snippet&type=video";
+        Log.e("chosenurl",url );
         mWpConnectService.getYouTubeVideos(url, pageToken, maxResults, Config.YOUTUBE_TOKEN, ids).enqueue(remoteCallback);
     }
 
     public void getYouTubeRecentVideos(String channelId, String pageToken, int maxResults, RemoteCallback<ResponseBody> remoteCallback) {
         String url = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&type=video";
+        Log.e("chosenurl",url );
         mWpConnectService.getYouTubeRecentVideos(
                 url,
                 pageToken,
